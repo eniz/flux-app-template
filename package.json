@@ -1,0 +1,41 @@
+{
+    "name": "flux-app-template",
+    "description": "Flux application template",
+    "keywords": [
+        "react",
+        "flux"
+    ],
+    "author": "Eniz Gülek",
+    "license":"MIT",
+    "main": "js/app.js",
+    "scripts": {
+        "build": "./node_modules/watchify/bin/cmd.js . -o build/bundle.js -v -d"
+    },
+    "browserify": {
+        "transform": [
+            "reactify",
+            "envify"
+        ]
+    },
+    "dependencies": {
+        "react": "^0.12.2",
+        "flux": "^2.0.1",
+        "object-assign": "^2.0.0",
+        "es5-shim": "^4.0.6"
+    },
+    "devDependencies": {
+        "6to5": "^3.3.4",
+        "6to5ify": "^4.0.0",
+        "browserify": "^8.0.3",
+        "envify": "^3.2.0",
+        "reactify": "^0.17.1",
+        "uglify-js": "^2.4.16",
+        "watchify": "^2.2.1"
+    },
+    "browserify": {
+        "transform": [
+            "reactify",
+            "envify"
+        ]
+    }
+}
